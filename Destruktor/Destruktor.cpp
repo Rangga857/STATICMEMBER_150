@@ -43,5 +43,5 @@ int main() {
 	angka* ptrBelajarcpp = new angka(5); // constructor dipanggil
 	delete ptrBelajarcpp; // Destructor dipanggil
 
-	
-}
+	return 0;
+}//Desrtructor dipanggil
