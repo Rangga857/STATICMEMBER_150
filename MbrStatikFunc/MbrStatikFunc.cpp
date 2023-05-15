@@ -12,6 +12,6 @@ public :
 	void setID();
 	void pritAll();
 
-	static void setnim(int pNim) { nim = pNim; }/*Definsi Function*/
+	static void setnim(int pNim) { nim = pNim; }/*Definisi function*/
 
 };
