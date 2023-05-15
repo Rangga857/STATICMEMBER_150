@@ -10,9 +10,19 @@ public :
 	string nama;
 
 	void setID();
-	void pritAll();
+	void printAll();
 
 	static void setnim(int pNim) { nim = pNim; }/*Definisi function*/
 	static int getNim() { return nim; /*definisi function*/ }
-
 };
+
+int mahasiswa::nim = 0;
+
+void mahasiswa::setID() {
+	id = ++nim;
+}
+void mahasiswa::printAll() {
+	cout << "ID = " << id << endl;
+	cout << "Nama = " << nama << endl;
+	cout << endl;
+}
