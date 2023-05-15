@@ -14,6 +14,8 @@ public :
 
 	static void setnim(int pNim) { nim = pNim; }/*Definisi function*/
 	static int getNim() { return nim; /*definisi function*/ }
+
+	mahasiswa(string pNama) : nama(pNama) { setID(); };
 };
 
 int mahasiswa::nim = 0;
@@ -26,3 +28,11 @@ void mahasiswa::printAll() {
 	cout << "Nama = " << nama << endl;
 	cout << endl;
 }
+
+int main() {
+	mahasiswa mhs1("Sri Dadi");
+	mahasiswa mhs2("Budi Jatmiko");
+	mahasiswa::setnim(9); //mengakses nim melalui static member  function "setnim?
+	mahasiswa mhs3("Andi Janu");
+	mahasiswa mhs4("Joko Wahoo");
+}	
