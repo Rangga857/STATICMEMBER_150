@@ -13,5 +13,6 @@ public :
 	void pritAll();
 
 	static void setnim(int pNim) { nim = pNim; }/*Definisi function*/
+	static int getNim() { return nim; /*definisi function*/ }
 
 };
